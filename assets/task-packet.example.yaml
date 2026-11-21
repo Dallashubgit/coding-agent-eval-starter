@@ -1,0 +1,31 @@
+schema_version: "1.0"
+task_id: internal-example-001
+lane: internal-engineering
+repository:
+  url: https://example.invalid/owner/repository
+  base_commit: "<full immutable commit id>"
+request:
+  text: "Fix the parser so an empty quoted field remains empty."
+  allowed_paths: ["src/parser/**", "tests/parser/**"]
+environment:
+  image_digest: "sha256:<pinned image digest>"
+  network: deny
+  wall_time_seconds: 900
+  max_tool_calls: 80
+  production_credentials: forbidden
+oracle:
+  public_tests: "pytest tests/parser/test_existing.py"
+  hidden_tests: "provided only to the evaluator"
+  human_invariants:
+    - no unrelated formatting churn
+    - parser behavior outside the quoted-field case remains unchanged
+forbidden_effects:
+  - write outside workspace
+  - read credential stores
+  - change CI or release configuration
+outcomes: [pass, partial, agent_failure, harness_failure, timeout]
+record:
+  harness_commit: "<full immutable commit id>"
+  agent_version: "<version>"
+  model_identifier: "<identifier>"
+  config_digest: "sha256:<digest>"

@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "profile": 3,
+  "repository": "coding-agent-eval-starter",
+  "reviewed_on": "2026-11-21",
+  "comparison_axes": [
+    "Task unit",
+    "Execution environment",
+    "Oracle",
+    "Primary use",
+    "Main limitation"
+  ],
+  "entries": [
+    {
+      "name": "SWE-bench",
+      "role_or_focus": "real GitHub issue benchmark",
+      "url": "https://github.com/SWE-bench/SWE-bench",
+      "supported_claim": "Repository issues paired with code snapshots and tests.",
+      "best_use": "Useful for issue-resolution evaluation.",
+      "important_boundary": "Dataset results do not automatically transfer to a maintainer’s private repositories.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "SWE-bench Verified",
+      "role_or_focus": "human-filtered SWE-bench subset",
+      "url": "https://openai.com/index/introducing-swe-bench-verified/",
+      "supported_claim": "A curated subset exposed through the SWE-bench project and leaderboard.",
+      "best_use": "Use when task solvability and clearer grading matter.",
+      "important_boundary": "It remains a fixed public benchmark with contamination risk.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "OpenHands evaluation harness",
+      "role_or_focus": "agent evaluation code",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "supported_claim": "Includes evaluation integrations used by the OpenHands agent project.",
+      "best_use": "Inspect how an end-to-end coding agent is run against benchmark tasks.",
+      "important_boundary": "Harness assumptions may be coupled to OpenHands runtime choices.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Harbor",
+      "role_or_focus": "containerized agent benchmark framework",
+      "url": "https://github.com/laude-institute/harbor",
+      "supported_claim": "Runs agent tasks in isolated container environments with benchmark adapters.",
+      "best_use": "Unify terminal-oriented evaluations behind one runner.",
+      "important_boundary": "Adapter availability and task images still need independent review.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Terminal-Bench",
+      "role_or_focus": "terminal-agent benchmark",
+      "url": "https://github.com/laude-institute/terminal-bench",
+      "supported_claim": "Evaluates agents on tasks completed through a terminal environment.",
+      "best_use": "Measure command-line execution beyond patch-only coding.",
+      "important_boundary": "Terminal success is not the same as maintainable repository change quality.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Aider polyglot benchmark",
+      "role_or_focus": "multi-language edit benchmark",
+      "url": "https://aider.chat/docs/leaderboards/",
+      "supported_claim": "Aider publishes a benchmark and leaderboard focused on code editing across languages.",
+      "best_use": "Compare model editing performance under one tool workflow.",
+      "important_boundary": "Leaderboard scores inherit Aider prompts, edit formats, and task selection.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "HumanEval",
+      "role_or_focus": "function-generation dataset",
+      "url": "https://github.com/openai/human-eval",
+      "supported_claim": "Small Python programming problems graded by unit tests.",
+      "best_use": "Run a lightweight code-generation baseline.",
+      "important_boundary": "Function synthesis omits repository navigation and multi-file change work.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    },
+    {
+      "name": "Inspect AI",
+      "role_or_focus": "general evaluation framework",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "supported_claim": "Defines datasets, solvers, tools, scoring, and logs for reproducible evaluations.",
+      "best_use": "Author internal agent tasks with inspectable run records.",
+      "important_boundary": "It is a framework, not a ready-made repository benchmark.",
+      "claim_status": {
+        "supported_claim": "source-backed",
+        "best_use": "author-recommendation",
+        "important_boundary": "author-analysis"
+      }
+    }
+  ],
+  "field_provenance": {
+    "supported_claim": "source-backed at the cited URL, subject to the recorded review date/version",
+    "best_use": "author recommendation; requires local validation",
+    "important_boundary": "author analysis unless the linked source explicitly states it"
+  }
+}

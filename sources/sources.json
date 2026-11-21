@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "reviewed_on": "2026-11-21",
+  "sources": [
+    {
+      "title": "SWE-bench",
+      "url": "https://github.com/SWE-bench/SWE-bench",
+      "type": "upstream_repository",
+      "supports": "Repository issues paired with code snapshots and tests.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Repository issues paired with code snapshots and tests.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "SWE-bench Verified",
+      "url": "https://openai.com/index/introducing-swe-bench-verified/",
+      "type": "maintainer_announcement",
+      "supports": "A curated subset exposed through the SWE-bench project and leaderboard.",
+      "authority": "OpenAI SWE-bench Verified maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "A curated subset exposed through the SWE-bench project and leaderboard.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "OpenHands evaluation harness",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "type": "upstream_repository",
+      "supports": "Includes evaluation integrations used by the OpenHands agent project.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Includes evaluation integrations used by the OpenHands agent project.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Harbor",
+      "url": "https://github.com/laude-institute/harbor",
+      "type": "upstream_repository",
+      "supports": "Runs agent tasks in isolated container environments with benchmark adapters.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Runs agent tasks in isolated container environments with benchmark adapters.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Terminal-Bench",
+      "url": "https://github.com/laude-institute/terminal-bench",
+      "type": "upstream_repository",
+      "supports": "Evaluates agents on tasks completed through a terminal environment.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Evaluates agents on tasks completed through a terminal environment.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Aider polyglot benchmark",
+      "url": "https://aider.chat/docs/leaderboards/",
+      "type": "official_project_documentation",
+      "supports": "Aider publishes a benchmark and leaderboard focused on code editing across languages.",
+      "authority": "upstream project documentation",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Aider publishes a benchmark and leaderboard focused on code editing across languages.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "HumanEval",
+      "url": "https://github.com/openai/human-eval",
+      "type": "upstream_repository",
+      "supports": "Small Python programming problems graded by unit tests.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Small Python programming problems graded by unit tests.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    },
+    {
+      "title": "Inspect AI",
+      "url": "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "type": "upstream_repository",
+      "supports": "Defines datasets, solvers, tools, scoring, and logs for reproducible evaluations.",
+      "authority": "upstream project maintainers",
+      "version_or_date": "moving upstream; reviewed 2026-11-21",
+      "claim_scope": "Defines datasets, solvers, tools, scoring, and logs for reproducible evaluations.",
+      "does_not_support": "This source alone does not validate this guide's cross-project recommendation, local result, interoperability, or safety sufficiency."
+    }
+  ]
+}
