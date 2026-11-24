@@ -1,5 +1,10 @@
 # Coding Agent Benchmark Starter
 
+
+> **Decision:** Use this starter when you need to compare coding agents across repository issues, terminal tasks, and private engineering work without blending unlike scores; skip it when a single public leaderboard already matches your exact task.
+>
+> **For:** maintainers piloting coding agents, evaluation engineers, and platform teams  ·  **Not for:** model-ranking collectors or teams unwilling to run task-level trials
+
 Coding-agent scores answer different questions. A maintainer choosing an agent for repository work should first decide whether the target is **issue resolution**, **terminal operation**, **small function synthesis**, or **private project tasks**; only then is a leaderboard number meaningful.
 
 This starter turns that distinction into three runnable pilot lanes and one reusable task packet. It is intentionally separate from an LLM application-regression suite: this repository grades an agent completing engineering work, while `llm-test-determinism-guide` controls repeated model/application checks in CI.
@@ -83,6 +88,14 @@ Recheck a row when its task format, evaluator, environment, license, or maintena
 
 Structured resource metadata is in [`sources/sources.json`](sources/sources.json). The executable reader artifact is [`assets/task-packet.example.yaml`](assets/task-packet.example.yaml).
 
+## Adjacent guides
+
+- [llm-test-determinism-guide](https://github.com/Simmondsun/llm-test-determinism-guide) — Use it when the target is LLM application regression in CI rather than end-to-end coding-agent work.
+- [ai-patch-review-playbook](https://github.com/ColomboEA/ai-patch-review-playbook) — Use it after an agent produces a patch and the next decision is how to review the change safely.
+- [dependency-agent-safety-gates](https://github.com/WILLIAMSTONSA/dependency-agent-safety-gates) — Use it when the proposed patch changes dependencies and needs an explicit approval and rollback gate.
+
 ## License
 
 Original guide text and the task-packet template are available under CC BY 4.0. Linked projects retain their own licenses and trademarks.
+
+If this saved you a decision, star the repo — it is how the next reader finds it.
